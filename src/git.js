@@ -1032,6 +1032,7 @@
       if (typeof command === "string") {
          command = command.split(" ");
       }
+      console.log('running git with arguments:', command);
       this._runCache.push([command, then]);
       this._schedule();
 
